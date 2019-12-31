@@ -10,4 +10,4 @@ loginTest                                                             | FAIL |
 1 critical test, 0 passed, 1 failed
 1 test total, 0 passed, 1 failed
 ==============================================================================
-Output:  /home/local/THEPSI/amit.g/eclipse-workspace/ZCodeBreakers/results/pabot_results/loginTest/output.xml
+Output:  /home/local/THEPSI/amit.g/eclipse-workspace/CodeBreakers/ZCodeBreakers/results/pabot_results/loginTest/output.xml

@@ -22,9 +22,24 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>libspecs/Helper.py</name>
+			<type>1</type>
+			<location>/usr/local/lib/python3.6/dist-packages/robot/api/deco.py</location>
+		</link>
+		<link>
+			<name>libspecs/HelperBrowser.py</name>
+			<type>1</type>
+			<location>/usr/local/lib/python3.6/dist-packages/robot/api/deco.py</location>
+		</link>
+		<link>
 			<name>libspecs/Selenium2Library.py</name>
 			<type>1</type>
 			<location>/usr/local/lib/python3.6/dist-packages/Selenium2Library/__init__.py</location>
+		</link>
+		<link>
+			<name>libspecs/SeleniumLibrary.py</name>
+			<type>1</type>
+			<location>/usr/local/lib/python3.6/dist-packages/SeleniumLibrary/__init__.py</location>
 		</link>
 	</linkedResources>
 </projectDescription>

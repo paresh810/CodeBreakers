@@ -1,11 +1,12 @@
-*** Settings ***
-Library     Selenium2Library    
-Resource    ../keywords/loginPageKeywords.robot
-Variables    ../variable/variable.py
+*** Settings ***                              
+Resource        ../keywords/loginPageKeywords.robot
+Variables       variable/variable.py
 
 
+   
+    
 *** Test Cases ***
-Asana Valid Login 
+Asana Login 
     Open Asana Home Page And Maximize       
     Enter Username                         
     Enter Password                          

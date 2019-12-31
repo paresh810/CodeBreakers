@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.8 on linux)" generated="20191231 21:01:27.128" rpa="false">
+<suite id="s1" name="ZCodeBreakers" source="/home/local/THEPSI/amit.g/eclipse-workspace/CodeBreakers/ZCodeBreakers">
+<suite id="s1-s1" name="testSuites" source="/home/local/THEPSI/amit.g/eclipse-workspace/CodeBreakers/ZCodeBreakers/testSuites">
+<suite id="s1-s1-s1" name="homePage" source="/home/local/THEPSI/amit.g/eclipse-workspace/CodeBreakers/ZCodeBreakers/testSuites/homePage.robot">
+<test id="s1-s1-s1-t1" name="Asana Login">
+<kw name="Open Asana Home Page And Maximize" library="loginPageKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${target_url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:27.268" level="INFO">Opening browser 'chrome' to base url 'https://app.asana.com/-/login'.</msg>
+<status status="PASS" starttime="20191231 21:01:27.268" endtime="20191231 21:01:34.517"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20191231 21:01:34.519" endtime="20191231 21:01:34.624"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:27.267" endtime="20191231 21:01:34.625"></status>
+</kw>
+<kw name="Enter Username" library="loginPageKeywords">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${site_username}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:34.626" endtime="20191231 21:01:34.653"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${site_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:34.654" level="INFO">Typing text 'amit.g@thepsi.com' into text field 'id:email_input'.</msg>
+<status status="PASS" starttime="20191231 21:01:34.654" endtime="20191231 21:01:34.738"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:34.625" endtime="20191231 21:01:34.738"></status>
+</kw>
+<kw name="Enter Password" library="loginPageKeywords">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${site_password}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:34.739" endtime="20191231 21:01:34.766"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${site_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:34.767" level="INFO">Typing text 'jan@2020' into text field 'id:password_input'.</msg>
+<status status="PASS" starttime="20191231 21:01:34.767" endtime="20191231 21:01:34.843"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:34.738" endtime="20191231 21:01:34.843"></status>
+</kw>
+<kw name="Click SignIn" library="loginPageKeywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button_login}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:34.844" level="INFO">Clicking button 'id:submit_button'.</msg>
+<status status="PASS" starttime="20191231 21:01:34.844" endtime="20191231 21:01:46.953"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:34.844" endtime="20191231 21:01:46.953"></status>
+</kw>
+<kw name="Verify LogIn" library="loginPageKeywords">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${page_title}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:47.000" level="INFO">Page title is 'Home - Asana'.</msg>
+<status status="PASS" starttime="20191231 21:01:46.955" endtime="20191231 21:01:47.001"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:46.954" endtime="20191231 21:01:47.001"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:27.265" endtime="20191231 21:01:47.001" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Setup Teams">
+<kw name="Click Add Team Button" library="homePageKeywords">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${add_team_button}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:47.003" endtime="20191231 21:01:47.030"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_team_button}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:47.030" level="INFO">Clicking element 'xpath://a[@class='SidebarTeamsList-addTeamLink']'.</msg>
+<status status="PASS" starttime="20191231 21:01:47.030" endtime="20191231 21:01:47.104"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:47.002" endtime="20191231 21:01:47.105"></status>
+</kw>
+<kw name="Enter Team Name" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${input_team_name}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:47.106" endtime="20191231 21:01:47.398"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_team_name}</arg>
+<arg>${team_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:47.399" level="INFO">Typing text 'CodeBreakers' into text field 'xpath://input[@class='textInput textInput--large']'.</msg>
+<status status="PASS" starttime="20191231 21:01:47.399" endtime="20191231 21:01:47.543"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:47.105" endtime="20191231 21:01:47.544"></status>
+</kw>
+<kw name="Enter Team Members Name" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:47.544" endtime="20191231 21:01:47.578"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+<arg>${team_member1_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:47.579" level="INFO">Typing text 'amit.g@thepsi.com' into text field 'xpath://input[@class='TokenizerInput-input']'.</msg>
+<status status="PASS" starttime="20191231 21:01:47.578" endtime="20191231 21:01:48.005"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20191231 21:01:48.006" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@class='TokenizerInput-input'] element.</msg>
+<msg timestamp="20191231 21:01:48.015" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20191231 21:01:48.005" endtime="20191231 21:01:48.325"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+<arg>${team_member2_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:48.326" level="INFO">Typing text 'paresh.sorathiya@thepsi.com' into text field 'xpath://input[@class='TokenizerInput-input']'.</msg>
+<status status="PASS" starttime="20191231 21:01:48.326" endtime="20191231 21:01:48.781"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20191231 21:01:48.783" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@class='TokenizerInput-input'] element.</msg>
+<msg timestamp="20191231 21:01:48.793" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20191231 21:01:48.781" endtime="20191231 21:01:49.111"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+<arg>${team_member3_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:49.113" level="INFO">Typing text 'siddartht.goyal@thepsi.com' into text field 'xpath://input[@class='TokenizerInput-input']'.</msg>
+<status status="PASS" starttime="20191231 21:01:49.112" endtime="20191231 21:01:49.557"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${add_team_member}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20191231 21:01:49.558" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@class='TokenizerInput-input'] element.</msg>
+<msg timestamp="20191231 21:01:49.568" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20191231 21:01:49.557" endtime="20191231 21:01:49.857"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:47.544" endtime="20191231 21:01:49.857"></status>
+</kw>
+<kw name="Click Create Team Button" library="homePageKeywords">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${create_team_button}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:49.858" endtime="20191231 21:01:49.888"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${create_team_button}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:49.889" level="INFO">Clicking element 'xpath:(//div[contains(text(),'Create Team')])'.</msg>
+<status status="PASS" starttime="20191231 21:01:49.888" endtime="20191231 21:01:50.007"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:49.857" endtime="20191231 21:01:50.008"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:47.002" endtime="20191231 21:01:50.008" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="Create A Project">
+<kw name="Click Create Project Button" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${create_a_project}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:50.010" endtime="20191231 21:01:52.163"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${create_a_project}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:52.164" level="INFO">Clicking element 'xpath://*[contains(text(),'Create a Project')]'.</msg>
+<status status="PASS" starttime="20191231 21:01:52.163" endtime="20191231 21:01:52.243"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:50.010" endtime="20191231 21:01:52.243"></status>
+</kw>
+<kw name="Click Blank project" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${add_blank_project_team}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:52.244" endtime="20191231 21:01:52.766"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_blank_project_team}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:52.767" level="INFO">Clicking element 'xpath://div[@title='Blank Project']//*[@class='Icon PlusIcon AddItemSquircle-plusIcon']'.</msg>
+<status status="PASS" starttime="20191231 21:01:52.767" endtime="20191231 21:01:52.897"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:52.243" endtime="20191231 21:01:52.898"></status>
+</kw>
+<kw name="Enter Project Name" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${project_name}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:52.898" endtime="20191231 21:01:52.924"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${project_name}</arg>
+<arg>${project_Title}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:52.925" level="INFO">Typing text 'TestProject' into text field 'id:new_project_dialog_content_name_input'.</msg>
+<status status="PASS" starttime="20191231 21:01:52.924" endtime="20191231 21:01:53.030"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:52.898" endtime="20191231 21:01:53.031"></status>
+</kw>
+<kw name="Click Create Project" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${create_project_button}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:53.031" endtime="20191231 21:01:53.056"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${create_project_button}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:53.057" level="INFO">Clicking element 'xpath://div[contains(text(),'Create project')]'.</msg>
+<status status="PASS" starttime="20191231 21:01:53.056" endtime="20191231 21:01:53.267"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:53.031" endtime="20191231 21:01:53.268"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:50.009" endtime="20191231 21:01:53.268" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="Create A Tasks">
+<kw name="Click Add Task Button" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${add_task}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:53.269" endtime="20191231 21:01:53.297"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_task}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:53.298" level="INFO">Clicking element 'xpath:(//div[contains(text(),'Add Task')])'.</msg>
+<status status="PASS" starttime="20191231 21:01:53.298" endtime="20191231 21:01:53.518"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:53.269" endtime="20191231 21:01:53.518"></status>
+</kw>
+<kw name="Enter Task Name" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>timeout=10</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:53.519" endtime="20191231 21:01:53.548"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:53.549" level="INFO">Clicking element 'xpath://textarea[@class='SpreadsheetTaskName-input override-focus-border override-hover-border']'.</msg>
+<status status="PASS" starttime="20191231 21:01:53.548" endtime="20191231 21:01:53.644"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>${input_task_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:53.644" level="INFO">Typing text 'AutotronProject' into text field 'xpath://textarea[@class='SpreadsheetTaskName-input override-focus-border override-hover-border']'.</msg>
+<status status="PASS" starttime="20191231 21:01:53.644" endtime="20191231 21:01:53.947"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${task_name}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20191231 21:01:53.948" level="INFO">Sending key(s) ('ENTER',) to xpath://textarea[@class='SpreadsheetTaskName-input override-focus-border override-hover-border'] element.</msg>
+<msg timestamp="20191231 21:01:53.959" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20191231 21:01:53.947" endtime="20191231 21:01:54.373"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${task_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:54.374" level="INFO">Clicking element 'xpath://textarea[@class='SpreadsheetTaskName-input override-focus-border override-hover-border']'.</msg>
+<status status="PASS" starttime="20191231 21:01:54.374" endtime="20191231 21:01:54.509"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:53.518" endtime="20191231 21:01:54.509"></status>
+</kw>
+<kw name="Click Task Details" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${task_details_button}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:54.510" endtime="20191231 21:01:54.540"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${task_details_button}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:54.540" level="INFO">Clicking element 'xpath://div[@class='SpreadsheetTaskNameCell-detailsButtonClickArea']'.</msg>
+<status status="PASS" starttime="20191231 21:01:54.540" endtime="20191231 21:01:54.690"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:54.510" endtime="20191231 21:01:54.690"></status>
+</kw>
+<kw name="Add Assignee" library="homePageKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${assignee_button}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:54.692" endtime="20191231 21:01:55.362"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${assignee_button}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:55.363" level="INFO">Clicking element 'xpath://div[contains(text(),'Unassigned')]'.</msg>
+<status status="PASS" starttime="20191231 21:01:55.363" endtime="20191231 21:01:55.444"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${assignee_name}</arg>
+</arguments>
+<status status="PASS" starttime="20191231 21:01:55.445" endtime="20191231 21:01:55.471"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${assignee_name}</arg>
+<arg>${input_assignee_name}</arg>
+</arguments>
+<msg timestamp="20191231 21:01:55.472" level="INFO">Typing text 'amit.g@thepsi.com' into text field 'xpath://input[@class='textInput textInput--large AssigneeTokenTypeahead-input']'.</msg>
+<status status="PASS" starttime="20191231 21:01:55.472" endtime="20191231 21:01:55.736"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:54.691" endtime="20191231 21:01:55.737"></status>
+</kw>
+<status status="PASS" starttime="20191231 21:01:53.268" endtime="20191231 21:01:55.737" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191231 21:01:27.164" endtime="20191231 21:01:55.738"></status>
+</suite>
+<status status="PASS" starttime="20191231 21:01:27.162" endtime="20191231 21:01:55.743"></status>
+</suite>
+<status status="PASS" starttime="20191231 21:01:27.143" endtime="20191231 21:01:55.748"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="ZCodeBreakers">ZCodeBreakers</stat>
+<stat pass="4" fail="0" id="s1-s1" name="testSuites">ZCodeBreakers.testSuites</stat>
+<stat pass="4" fail="0" id="s1-s1-s1" name="homePage">ZCodeBreakers.testSuites.homePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

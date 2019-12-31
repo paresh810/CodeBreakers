@@ -1,82 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.8 on linux)" generated="20191226 16:15:32.865" rpa="false">
-<suite id="s1" name="loginTest" source="/home/local/THEPSI/amit.g/eclipse-workspace/ZCodeBreakers/testSuites/loginTest.robot">
+<robot generator="Robot 3.1.2 (Python 3.6.8 on linux)" generated="20191228 20:10:45.616" rpa="false">
+<suite id="s1" name="loginTest" source="/home/local/THEPSI/amit.g/eclipse-workspace/CodeBreakers/ZCodeBreakers/testSuites/loginTest.robot">
 <test id="s1-t1" name="Asana Valid Login">
 <kw name="Open Asana Home Page And Maximize" library="loginPageKeywords">
-<kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the results.</doc>
-<arguments>
-<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
-<arg>sys</arg>
-</arguments>
-<assign>
-<var>${chrome_options}</var>
-</assign>
-<msg timestamp="20191226 16:15:32.997" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f245f35ba20&gt;</msg>
-<status status="PASS" starttime="20191226 16:15:32.997" endtime="20191226 16:15:32.997"></status>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
-<arg>${chrome_options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-extensions</arg>
-</arguments>
-<status status="PASS" starttime="20191226 16:15:32.998" endtime="20191226 16:15:32.998"></status>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
-<arg>${chrome_options}</arg>
-<arg>add_argument</arg>
-<arg>--no-sandbox</arg>
-</arguments>
-<status status="PASS" starttime="20191226 16:15:32.998" endtime="20191226 16:15:32.998"></status>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
-<arg>${chrome_options}</arg>
-<arg>add_argument</arg>
-<arg>--ignore-certificate-errors</arg>
-</arguments>
-<status status="PASS" starttime="20191226 16:15:32.998" endtime="20191226 16:15:32.998"></status>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<arguments>
-<arg>${chrome_options}</arg>
-<arg>add_argument</arg>
-<arg>--disableGpu</arg>
-</arguments>
-<status status="PASS" starttime="20191226 16:15:32.998" endtime="20191226 16:15:32.998"></status>
-</kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${targetURL}</arg>
+<arg>${target_url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20191226 16:15:32.999" level="INFO">Opening browser 'chrome' to base url 'https://app.asana.com/-/login'.</msg>
+<msg timestamp="20191228 20:10:45.743" level="INFO">Opening browser 'chrome' to base url 'https://app.asana.com/-/login'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20191226 16:15:34.132" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20191226 16:15:34.130" endtime="20191226 16:15:34.133"></status>
+<msg timestamp="20191228 20:10:46.811" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20191228 20:10:46.810" endtime="20191228 20:10:46.811"></status>
 </kw>
-<msg timestamp="20191226 16:15:34.138" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally
+<msg timestamp="20191228 20:10:46.813" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally
   (unknown error: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 </msg>
-<status status="FAIL" starttime="20191226 16:15:32.999" endtime="20191226 16:15:34.138"></status>
+<status status="FAIL" starttime="20191228 20:10:45.742" endtime="20191228 20:10:46.813"></status>
 </kw>
-<status status="FAIL" starttime="20191226 16:15:32.997" endtime="20191226 16:15:34.139"></status>
+<status status="FAIL" starttime="20191228 20:10:45.742" endtime="20191228 20:10:46.813"></status>
 </kw>
-<status status="FAIL" starttime="20191226 16:15:32.996" endtime="20191226 16:15:34.139" critical="yes">WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally
+<status status="FAIL" starttime="20191228 20:10:45.742" endtime="20191228 20:10:46.813" critical="yes">WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally
   (unknown error: DevToolsActivePort file doesn't exist)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
 </status>
 </test>
-<status status="FAIL" starttime="20191226 16:15:32.866" endtime="20191226 16:15:34.143"></status>
+<status status="FAIL" starttime="20191228 20:10:45.616" endtime="20191228 20:10:46.815"></status>
 </suite>
 <statistics>
 <total>

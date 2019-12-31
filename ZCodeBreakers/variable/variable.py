@@ -1,5 +1,0 @@
-browser="chrome"
-target_url="https://app.asana.com/-/login"
-username="amit.g@thepsi.com"
-password="jan@2020"
-page_title="Home - Asana"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.8 on linux)" generated="20191228 20:10:45.363" rpa="false">
+<suite id="s1" name="loginTest" source="/home/local/THEPSI/amit.g/eclipse-workspace/CodeBreakers/ZCodeBreakers/testSuites/loginTest.robot">
+<test id="s1-t1" name="Asana Valid Login">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20191228 20:10:45.480" endtime="20191228 20:10:45.481"></status>
+</kw>
+<status status="PASS" starttime="20191228 20:10:45.480" endtime="20191228 20:10:45.481" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191228 20:10:45.363" endtime="20191228 20:10:45.481"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="loginTest">loginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
